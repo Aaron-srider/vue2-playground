@@ -51,6 +51,14 @@ const routes = [
     component: () => import("@/components/Layout.vue"),
     children: [
       {
+        path: "testts",
+        meta: {
+          pageTitle: "testts",
+          menuName: "testts",
+        },
+        component: () => import("@/views/Testts.vue"),
+      },
+      {
         path: "test_ConsoleLogTextArea",
         meta: {
           pageTitle: "ConsoleLogTextArea",
